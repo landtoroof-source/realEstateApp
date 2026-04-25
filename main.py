@@ -24,9 +24,9 @@ app.add_middleware(
 
 print("Loading environment variables...")
 load_dotenv()  # Load from .env file
-print("Environment variables loaded:")
-print(f"GROQ_API_KEY: {os.environ.get('GROQ_API_KEY')}")
-print(f"ADMIN_SECRET: {os.environ.get('ADMIN_SECRET')}")
+# print("Environment variables loaded:")
+# print(f"GROQ_API_KEY: {os.environ.get('GROQ_API_KEY')}")
+# print(f"ADMIN_SECRET: {os.environ.get('ADMIN_SECRET')}")
 # ── Groq client ──────────────────────────────────────────────────────────────
 client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
 MODEL = "llama-3.1-8b-instant"
